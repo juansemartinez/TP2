@@ -1,0 +1,55 @@
+.container {
+    width: 100%;
+    height: 800px;
+    background: #bdc3c7;  
+    background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7); 
+    background: linear-gradient(to bottom, #2c3e50, #bdc3c7); 
+    display: flex;  /* siempre los pone en fila */
+    flex-direction: row;  /* ubica los objetos en linea horizontal*/
+    justify-content: center;
+    align-items:center;
+    font: 
+}
+
+.cuadrados {    
+    width: 200px;
+    height: 300px;
+    background: rgb(14, 43, 54);
+    border: 1px solid black;
+    margin: 40px;
+    color: white;
+}
+
+.cuadrados:hover{
+    border:2px solid rgb(203, 253, 128);
+    transform: scale(1.05)
+}
+
+.cuadrados p {
+    display: flex; 
+    justify-content: top;
+    margin: 5px;
+}
+
+.cuadrados h3 {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadrados h4 {
+    display: flex; 
+    justify-content: center;
+    align-items: bottom;
+    margin-left: 25px;
+}
+
+/* /////// */
+
+@media screen and (max-width: 1000px) {
+    .container {
+        display: block;
+        height: 100%;
+        padding: 30px;
+    }
+}
